@@ -1,0 +1,262 @@
+.home_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dis_cont_left {
+    width: 20%;
+    min-height: 90vh;
+
+    padding: 12px;
+}
+
+.dis_cont_left a {
+    text-decoration: none;
+}
+
+.dis_cont_left a {
+    color: rgb(38, 38, 38);
+}
+
+.dis_cont_left .active li {
+    color: blueviolet;
+    font-weight: bold;
+    border-radius: 20px;
+    position: relative;
+
+}.active li .fa-arrow-up{
+    color: green;
+}
+.active li .fa-arrow-down{
+    color: red;
+}
+
+.dis_cont_left .active li::before{
+ content: '';
+ position: absolute;
+ height: 2rem;
+ width:3px;
+ border-radius: 20px;
+ background-color: rgb(55, 55, 255);
+
+}
+
+.dis_cont_right {
+
+    width: 80%;
+   height: 90vh;
+    padding: 12px;
+overflow: scroll;
+
+}
+
+.input_sidber {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.input_sidber::placeholder {
+    color: rgba(157, 157, 157, 0.992);
+}
+
+.input_sidber:focus {
+    outline: none;
+}
+
+.menu {
+    margin-top: 12px;
+}
+
+.dis_cont_left li,
+i {
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+
+
+.chart_1_container{
+    display: flex;
+justify-content: space-around;
+}
+.chart_1{
+    width: 48%;
+display: flex;
+height: 40vh;
+padding: 12px;
+border-radius: 5px;
+box-shadow: 1px 1px 8px 1px #ddd;
+justify-content: space-around;
+
+overflow: hidden;
+align-items:flex-end;
+
+
+}
+.chart_1 .st_1{
+    width: 50px;
+cursor:grab;
+
+    margin: 0px 2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+background:#0362fc;
+animation-duration: 0.5s;
+}
+
+.chart_1 .st_1:nth-child(1){
+    height: 10%;
+animation-name: rang1;
+
+}
+@keyframes rang1{
+    from {
+        height: 0%;
+    }to{
+        height: 10%;
+    }
+}
+
+
+
+.chart_1 .st_1:nth-child(2){
+    height: 40%;
+animation-name: rang2;
+
+}
+@keyframes rang2{
+    from {
+        height: 0%;
+    }to{
+        height: 40%;
+    }
+}
+
+.chart_1 .st_1:nth-child(3){
+    height: 80%;
+animation-name: rang3;
+
+}
+@keyframes rang3{
+    from {
+        height: 0%;
+    }to{
+        height: 80%;
+    }
+}
+
+.chart_1 .st_1:nth-child(4){
+    height: 40%;
+animation-name: rang4;
+
+}
+@keyframes rang4{
+    from {
+        height: 0%;
+    }to{
+        height: 40%;
+    }
+}
+
+.chart_1 .st_1:nth-child(5){
+    height: 100%;
+animation-name: rang5;
+
+}
+@keyframes rang5{
+    from {
+        height: 0%;
+    }to{
+        height: 100%;
+    }
+}
+.chart_1 .st_1:nth-child(6){
+    height: 70%;
+animation-name: rang6;
+
+}
+@keyframes rang6{
+    from {
+        height: 0%;
+    }to{
+        height: 70%;
+    }
+}
+.chart_1 .st_1:nth-child(7){
+    height: 80%;
+animation-name: rang7;
+
+}
+@keyframes rang7{
+    from {
+        height: 0%;
+    }to{
+        height: 80%;
+    }
+}
+
+
+
+
+
+
+.pie_circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}.pie_circle figure {
+    height: 100%;
+    width: 100%;
+  
+}
+
+
+
+
+  
+.pie {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+    background-image: conic-gradient(rgb(255, 0, 200) 64%,  64%, green 81%, black 81%);
+    border-radius: 50%;
+    animation-name: pie_chart;
+animation-duration: 0.5s;
+
+  }
+  @keyframes pie_chart{
+    from{
+        background-image: conic-gradient(orange 3%, blue 6%, blue 5%, black 8%);
+        border-radius: 50%;
+
+    }
+    to{
+
+
+        background-image: conic-gradient(orange 64%, blue 64%, blue 81%, black 81%);
+
+    }
+  }
+  .inbond_sel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px 0px;
+    margin-top: 12px;
+    border-top: 1px solid #ddd;
+  }.inbond_input{
+    margin-top: 12px;
+
+  }
+  .out_bond_cont{
+    margin-top: 23px;
+
+  }

@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    align-items: center;
+box-shadow: 1px 1px 8px 1px #ddd;
+width: 100%;
+}
+header .search_ber{
+    display: flex;
+    align-items: center;
+
+}
+
